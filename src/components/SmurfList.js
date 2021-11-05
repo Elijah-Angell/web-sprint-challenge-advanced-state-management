@@ -4,11 +4,11 @@ import { connect } from 'react-redux';
 
 const SmurfList = (props) => {
 
-    const { smurf } = props;
+    const { smurf, isLoading } = props;
 
 
 
-    const isLoading = false;
+
     // const testSmurf = {
     //     id: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
     //     name: 'Poppa Smurf',
@@ -35,7 +35,7 @@ const SmurfList = (props) => {
 const mapStateToProps = (state) => {
     return {
         smurf: state.smurf,
-        smurf: state.isLoading
+        isLoading: state.isLoading
     };
 };
 
